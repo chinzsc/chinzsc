@@ -11,6 +11,7 @@
 
 @property (nonatomic, strong) UIButton *btn;
 @property (nonatomic, copy) dispatch_block_t block;
+@property (nonatomic, strong) NSString *name;
 
 @end
 
@@ -27,6 +28,7 @@
     
     self.block = ^{
         NSLog(@"xxx");
+        self.name = @"周双成";
     };
 }
 
