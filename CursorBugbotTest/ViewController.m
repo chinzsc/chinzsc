@@ -29,7 +29,8 @@
     self.block = ^{
         NSLog(@"xxx");
         self.name = @"周双成";
-        self.name = "xxxx";
+        self.name = @"xxxx";
+        self.name = "xx";
     };
 }
 
