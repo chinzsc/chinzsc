@@ -10,6 +10,7 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) UIButton *btn;
+@property (nonatomic, copy) dispatch_block_t block;
 
 @end
 
@@ -24,10 +25,14 @@
     
     [self.btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
+    self.block = ^{
+        NSLog(@"xxx");
+    };
 }
 
 -(void)btnClick:(id)sender {
     NSLog(@"xxxx");
+    self.block();
 }
 
 
