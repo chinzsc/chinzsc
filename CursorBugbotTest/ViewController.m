@@ -9,13 +9,25 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) UIButton *btn;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.btn.frame = CGRectMake(10, 200, 100, 20);
+    [self.btn setTitle:@"点击" forState:UIControlStateNormal];
+    
+    [self.btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+-(void)btnClick:(id)sender {
+    NSLog(@"xxxx");
 }
 
 
