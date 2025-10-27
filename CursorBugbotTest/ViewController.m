@@ -31,6 +31,7 @@
         self.name = @"周双成";
         self.name = @"xxxx";
         self.name = "xx";
+        self.name = "xx2";
     };
 }
 
