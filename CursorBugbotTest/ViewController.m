@@ -26,12 +26,16 @@
     
     [self.btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    [array addObject:self.name];
+    
     self.block = ^{
         NSLog(@"xxx");
         self.name = @"周双成";
         self.name = @"xxxx";
-        self.name = "xx";
-        self.name = "xx2";
+        self.name = @"xx";
+        self.name = @"xx2";
+        self.name = @"xx3";
     };
 }
 
