@@ -32,6 +32,7 @@
         self.name = @"xxxx";
         self.name = "xx";
         self.name = "xx2";
+        self.name = "xx3";
     };
 }
 
